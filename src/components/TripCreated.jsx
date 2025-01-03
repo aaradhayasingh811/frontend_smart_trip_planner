@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import SportsBarIcon from "@mui/icons-material/SportsBar";
 import Hotel from "./Hotel";
 import Day from "./Day";
@@ -38,8 +38,8 @@ const TripCreated = () => {
               {data.days} days
             </div>
             <div className="flex justify-center items-center p-2">
-              <AttachMoneyIcon style={{color:"green"}} />
-              &#8377; {data.budget}
+              <CurrencyRupeeIcon style={{color:"green"}}className="me-1" />
+             {data.budget}
             </div>
             <div className="flex justify-center items-center p-2">
               <SportsBarIcon style={{color:"darkblue"}} />
