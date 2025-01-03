@@ -7,6 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import { toast, Bounce } from 'react-toastify';
 
 const Navbar = ({val,show,logout,signup,create}) => {
   const navigate = useNavigate();
@@ -18,7 +19,17 @@ const Navbar = ({val,show,logout,signup,create}) => {
           `https://backened-smart-trip-planner.onrender.com/api/v1/logout/${email}`,
           {}, 
       );
-        console.log(res.data.message || "Logout successful");
+        toast.info('🦄 Logout successful', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+          });
         navigate('/signin');
       }
       else{
