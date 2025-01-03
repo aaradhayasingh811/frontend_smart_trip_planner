@@ -3,6 +3,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import StarIcon from '@mui/icons-material/Star';
 import HotelIcon from '@mui/icons-material/Hotel';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+
 const Hotel = ({address,cost,imageUrl,rating}) => {
     const randomNum = Math.random() * (5 - 3) + 3;
 
@@ -15,11 +17,11 @@ const Hotel = ({address,cost,imageUrl,rating}) => {
         {Name}
      </div> */}
      <div className="flex items-center my-1">
-        <LocationOnIcon style={{color:"blue"}}/>
+        <LocationOnIcon style={{color:"#CC0000"}}/>
         {address} 
      </div>
       <div className="flex items-center my-1">
-        <MonetizationOnIcon style={{color:"green"}}/>
+        <CurrencyRupeeIcon style={{color:"green"}}/>
         {cost}
       </div>
       <div className="flex items-center my-1">
