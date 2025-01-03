@@ -58,7 +58,7 @@ const TripComponent = ({email,trip,onDelete}) => {
     <div className="p-2 border-2 rounded-sm bg-[#F5F7F8] shadow-md hover:shadow-2xl hover:shadow-teal-900" >
         <img src="https://places.googleapis.com/v1/places/ChIJu0-pK65KhTkRUgI4wRKJMno/photos/AWYs27wDTG_WV5736yJAYrDXW20ls_mC-YKHu-YWyNMpf2SvGi-CL7AQTdDxCybRd87SYlGOnvU77eRMqLfouWrzdA21PH1kB1rre9Vv-uZnvTxc4bjCx7UHwYmYYWzHDDKZzF-uPEMdGp2bqW_KgftPhIK0THBbF6gt6BlO/media?maxHeightPx=600&maxWidthPx=1000&key=AIzaSyDBL1qVy7Dap0-b_EyiIIkvswGVHADvRu0" alt="" className='h-60 w-64 rounded' />
         <p className='font-semibold text-2xl flex items-center my-1 text-[#536493]'><LocationOnIcon style={{color:"#CC0000"}} className='me-1'/> {trip.destination}</p>
-        <p className='font-normal text-base flex items-center my-1 text-[#0D7C66]'> <CalendarMonthIcon/>  {trip.days} days </p>
+        <p className='font-normal text-base flex items-center my-1 text-[#0D7C66]'> <CalendarMonthIcon className='me-1'/>  {trip.days} days </p>
         <p className='font-normal text-base flex items-center my-1 text-[#468585]'><CurrencyRupeeIcon className='me-1'/>{trip.budget}</p>
         <p className='font-normal text-base flex items-center text-[#468585]'><PeopleIcon className='me-1'/> {trip.numberOfPeople} Traveller</p>
         <button onClick={toNavigate} type='click' className='p-2 bg-[#45474B] rounded-sm text-white my-2'>Show more..</button>
