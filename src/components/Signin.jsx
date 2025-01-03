@@ -9,6 +9,7 @@ import { use } from "react";
 import { red } from "@mui/material/colors";
 import background from "../assets/background.jpg";
 import travel from "../assets/travel.jpg";
+import { toast, Bounce } from "react-toastify";
 
 const Signin = () => {
   const [data, setData] = useState({
@@ -32,7 +33,19 @@ const Signin = () => {
         data
       );
       console.log(response.data);
-      alert("Sign in Success");
+      toast.success("🦄 Sign in success", {
+        position: "top-right",
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce,
+      });
+      // alert("Sign in Success");
+
       navigate(`/create-trip/${data.email}`);
     } catch (error) {
       console.log(error);

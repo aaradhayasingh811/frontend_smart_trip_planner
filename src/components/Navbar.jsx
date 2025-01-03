@@ -59,8 +59,8 @@ const Navbar = ({val,show,logout,signup,create}) => {
   return (
 
     <>
-    <div className="p-2"></div>
-      <div className="flex items-center justify-between mb-4 mx-14 flex-col sm:flex-row bg-[#00563B] p-2 rounded">
+    <div className="sm:p-2"></div>
+      <div className="flex items-center justify-between mb-4 mx-0 sm:mx-14 flex-col sm:flex-row bg-[#00563B] p-2 sm:rounded">
         <div className="logo my-4 sm:my-0">
             <img src={logo} alt="logo" className='w-10 h-10' />
         </div>
